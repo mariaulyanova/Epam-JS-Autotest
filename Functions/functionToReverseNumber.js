@@ -25,7 +25,6 @@ console.log(reverseNum(1)); //1
 function reverseNum(n) {
   n += "";
   return n.split("").reverse().join("");
-  return number;
 }
 
 console.log(reverseNum(123)); //321

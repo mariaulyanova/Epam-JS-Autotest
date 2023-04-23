@@ -9,8 +9,8 @@
 // factorial(0) should return 1
 
 function factorial(n) {
-  if (typeof n !== 'number' || !Number.isInteger(n) || n < 0) {
-    return "Error: Input must be a positive integer!";
+  if (n < 0) {
+    return "Error: Input must be a positive integer!";    
   } else if (n === 0 || n === 1) {
     return 1;
   } else {
@@ -22,7 +22,3 @@ console.log(factorial(4)); // 24
 console.log(factorial(1)); // 1
 console.log(factorial(0)); // 1
 console.log(factorial(-2)); //Error: Input must be a positive integer!
-console.log(factorial("d"));
-
-
-
